@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registro_temperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./temperatura.xsd">
+  <provincia></provincia>
+  <fecha></fecha>
+  <temperatura_minima></temperatura_minima>
+  <temperatura_maxima></temperatura_maxima>
+  <incidencias>
+    <incidencia nombre="frio" severidad="alta"/>
+    <incidencia nombre="nieve" severidad="alta"/>
+    <incidencia nombre="lluvia" severidad="alta"/>
+  </incidencias>
+</registro_temperatura>
