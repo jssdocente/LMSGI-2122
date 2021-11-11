@@ -1,11 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Validación con XML Schema
 Validar utilizando XML Xhema un documento XML que contien un registro de temperatura:
 * El elemento principal contiene un registo de temperaturas con el nombre de la provincia, fecha del registro, la temperatura mínima y maxima y una relacio
 ón de incidencias.
-* La fecha de registro de be ser uan fecha válida.
+* La fecha de registro debe ser uan fecha válida.
 * La temperatura mínima no debe ser inferior a -50
 * La temperatura máxima no debe ser superior a 50
 * El numero de incidencias no tiene límite
 * Las incidencias tiene un nombre que puede ser "frio", "nieve", "lluvia" o "calor"
 * Las incidencias tiene una severidad que puede ser "alta", "media" o "baja"
  -->
+<registro_temperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./temperatura_1.xsd">
+
+  <provincia>badajoz</provincia>
+  <fecha>2021-05-12</fecha>
+  <temperatura_minima>40</temperatura_minima>
+  <temperatura_maxima>50</temperatura_maxima>
+
+  <incidencias>
+    <incidencia nombre="frio" severidad="alta"/>
+    <incidencia nombre="nieve" severidad="alta"/>
+    <incidencia nombre="lluvia" severidad="alta"/>
+  </incidencias>
+
+</registro_temperatura>

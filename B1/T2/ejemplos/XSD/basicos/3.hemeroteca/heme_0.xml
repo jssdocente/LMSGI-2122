@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hemeroteca>
+  <pelicula>
+    <titulo>1</titulo>
+    <director>Alex de la igleisa</director>
+    <reparto>
+      <actor>Jose de la Vega</actor>
+      <actor>Juan Etxanove</actor>
+    </reparto>
+  </pelicula>
+  <pelicula>
+    <titulo>1</titulo>
+    <director>Alex de la igleisa</director>
+    <reparto>
+      <actor>Jose de la Vega</actor>
+      <actor>Juan Etxanove</actor>
+    </reparto>
+  </pelicula>
+  <pelicula>
+    <titulo>1</titulo>
+    <director>Alex de la igleisa</director>
+  </pelicula>
+</hemeroteca>
