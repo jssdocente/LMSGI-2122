@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified">
   <xs:element name="note">
     <xs:complexType>
       <xs:sequence>
@@ -7,6 +7,23 @@
         <xs:element name="from" type="xs:string"/>
         <xs:element name="heading" type="xs:string"/>
         <xs:element name="body" type="xs:string"/>
+
+        <xs:element name="direcciones" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address" minOccurs="1" maxOccurs="3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="origen" type="xs:string"/>
+                    <xs:element name="destino" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="calle" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
       </xs:sequence>
     </xs:complexType>
   </xs:element>

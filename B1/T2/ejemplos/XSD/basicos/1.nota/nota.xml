@@ -4,4 +4,18 @@
   <from>Jani</from>
   <heading>Reminder</heading>
   <body>Dont forget me this weekend</body>
+  <direcciones>
+    <address>
+      <origen></origen>
+      <destino></destino>
+    </address>
+    <address calle="orion">
+      <origen></origen>
+      <destino></destino>
+    </address>
+    <address calle="orion">
+      <origen></origen>
+      <destino></destino>
+    </address>
+  </direcciones>
 </note>

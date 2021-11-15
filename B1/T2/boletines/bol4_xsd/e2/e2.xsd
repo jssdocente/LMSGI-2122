@@ -1,0 +1,49 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vehiculos">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="vehiculo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="modelo" type="xs:string"/>
+
+              <xs:element name="fabricacion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="inicio" type="tipoMomento" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="fin" type="tipoMomento" minOccurs="1" maxOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+
+              <xs:element name="modificaciones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="modificacion" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tipoMomento">
+    <xs:sequence>
+      <xs:element ref="dia"/>
+      <xs:element ref="mes"/>
+      <xs:element ref="anyo"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="dia" type="xs:string"/>
+  <xs:element name="mes" type="xs:string"/>
+  <xs:element name="anyo" type="xs:string"/>
+
+</xs:schema>
