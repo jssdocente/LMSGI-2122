@@ -10,8 +10,9 @@ Validar utilizando XML Xhema un documento XML que contien un registro de tempera
 * Las incidencias tiene un nombre que puede ser "frio", "nieve", "lluvia" o "calor"
 * Las incidencias tiene una severidad que puede ser "alta", "media" o "baja"
  -->
-<registro_temperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./temperatura_1.xsd">
-
+<registro_temperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="temp.xsd"
+>
   <provincia>badajoz</provincia>
   <fecha>2021-05-12</fecha>
   <temperatura_minima>40</temperatura_minima>
@@ -22,5 +23,8 @@ Validar utilizando XML Xhema un documento XML que contien un registro de tempera
     <incidencia nombre="nieve" severidad="alta"/>
     <incidencia nombre="lluvia" severidad="alta"/>
   </incidencias>
+
+  <version>41.34</version>
+  <dni>08678965a</dni>
 
 </registro_temperatura>

@@ -1,18 +1,13 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import schemaLocation="./tipos_comunes.xsd" namespace="http://1dam/lmg/tipos_comunes" />
+
   <xs:element name="registro_temperatura">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="provincia" type="xs:string" />
         <xs:element name="fecha" type="xs:date" />
 
-        <xs:element name="temperatura_minima">
-          <xs:simpleType>
-            <xs:restriction base="xs:integer">
-              <xs:minInclusive value="-50"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-
+        <xs:element name="temperatura_minima" type="temperatura_min"/>
         <xs:element name="temperatura_maxima">
           <xs:simpleType>
             <xs:restriction base="xs:integer">
@@ -37,4 +32,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+
+
 </xs:schema>
