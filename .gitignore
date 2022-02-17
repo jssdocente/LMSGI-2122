@@ -4,7 +4,10 @@
 ### GIT
 
 ### Jypiter Notebook ###
-**/.ipynb*/
+.vscode/
+
+### Jypiter Notebook ###
+**/.ipynb_*/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
