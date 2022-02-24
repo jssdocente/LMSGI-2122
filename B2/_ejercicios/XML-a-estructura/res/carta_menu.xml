@@ -1,0 +1,7 @@
+<carta>
+    <plato precio="5.95" descripcion="Plato 1" calorias="650">Gofres belgas</plato>
+    <plato precio="7.95" descripcion="Plato 2" calorias="750">Gofres belgas con fresas</plato>
+    <plato precio="8.95" descripcion="Plato 3" calorias="850">Gofres belgas con frutas del bosque</plato>
+    <plato precio="4.50" descripcion="Plato 4" calorias="358">Tostada francesa</plato>
+    <plato precio="6.95" descripcion="Plato 5" calorias="980">Desaryuno de la casa</plato>
+</carta>

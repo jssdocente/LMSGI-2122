@@ -1,0 +1,18 @@
+<librerias>
+   <libreria>
+      <codigo>1263</codigo>
+      <direccion>Juan de Juni, 31</direccion>
+      <propietario>
+         <nombre>Juanito</nombre>
+         <telefono>656222111</telefono>
+      </propietario>
+   </libreria>
+   <libreria>
+      <codigo>2569</codigo>
+      <direccion>C/ Marcial, 86</direccion>
+      <propietario>
+         <nombre>Rafael</nombre>
+         <telefono>698256314</telefono>
+      </propietario>
+   </libreria>
+</librerias>

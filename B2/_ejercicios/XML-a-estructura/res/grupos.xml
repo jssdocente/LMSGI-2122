@@ -1,0 +1,25 @@
+<discos>
+	<grupo codigo="muse">
+		<nombre>MUSE</nombre>
+		<miembro>Matthew Bellamy</miembro>
+		<miembro>Dominic Howard</miembro>
+		<miembro>Chris Wolstenholme</miembro>
+		<nacionalidad>Alemania</nacionalidad>
+		<web>www.ponprecioamimusica.org/muse</web>
+		<email>midireccion@ponprecioamimusica.org</email>
+	</grupo>
+	<grupo codigo="feed">
+		<nombre>FEEDER</nombre>
+		<miembro>Grant Nicholas</miembro>
+		<miembro>Taka Hirose</miembro>
+		<miembro>Jon Henry Lee</miembro>
+		<nacionalidad>Gran Bretaña</nacionalidad>
+	</grupo>
+	<grupo codigo="fantastical">
+		<nombre>Fantastical Music</nombre>
+		<miembro>Marta</miembro>
+		<miembro>Ramon</miembro>
+		<miembro>Pedro</miembro>
+		<nacionalidad>EE.UU</nacionalidad>
+	</grupo>
+</discos>
