@@ -21,7 +21,6 @@
     - [TABLAS](#tablas)
 - [Formularios HTML](#formularios-html)
 - [Formas de agregar estilos a HTML](#formas-de-agregar-estilos-a-html)
-- [Flex Box](#flex-box)
 - [LISTADO ETIQUETAS HTML por funcionalidad](#listado-etiquetas-html-por-funcionalidad)
 - [Enlaces de interes:](#enlaces-de-interes)
 <br><br><br>
@@ -1517,25 +1516,6 @@ A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
-## Flex Box
-
-El archivo de ejemplo se encuentra en el siguiente enlace: [Uso del FlexBox](Uso-del-FlexBox/)
-
-### Alineando elementos de forma horizontal <!-- omit in toc --> 
-
-La propiedad de css que nos permite definir la forma en que se alinearán o distribuirán los hijos de un elemento al que se le ha asignado un *display flex* es: **justify-content**. Y puede tomar entre otros valores, los siguientes:
-
-- **flex-start**: para alinear todos los elementos hacia el inicio del espacio disponible.
-- **flex-end**: para alinear todos los elementos hacia el final, a la derecha.
-- **center**: para alinear todos los elementos al centro del espacio disponible.
-- **space-between**: para distribuir los elementos con un espacio proporcional e igual entre ellos.
-- **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y último elementos con respecto a los extremos del espacio disponible).
-- **space-around**: similar a *space-evenly* pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ## LISTADO ETIQUETAS HTML por funcionalidad
 
  continuación voy a indicarte cuales son las etiquetas HTML más usadas y también se indica su finalidad.
@@ -1550,5 +1530,3 @@ En la siguiente [página](https://www.mclibre.org/consultar/htmlcss/html/html-et
 * [HTML DOCTOR: Resumen de todas las etiquetas disponibles en HTML5](http://html5doctor.com/)
 
 * [Lista etiquetas HTML con ejemplos](https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html)
-
-<iframe src="https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html">
