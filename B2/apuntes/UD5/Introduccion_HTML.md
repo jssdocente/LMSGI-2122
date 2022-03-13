@@ -22,7 +22,8 @@
 - [Formularios HTML](#formularios-html)
 - [Formas de agregar estilos a HTML](#formas-de-agregar-estilos-a-html)
 - [Flex Box](#flex-box)
-- [Enlaces de Interés](#enlaces-de-interés)
+- [LISTADO ETIQUETAS HTML por funcionalidad](#listado-etiquetas-html-por-funcionalidad)
+- [Enlaces de interes:](#enlaces-de-interes)
 <br><br><br>
 ## Introducción al desarrollo web
 
@@ -1535,13 +1536,19 @@ La propiedad de css que nos permite definir la forma en que se alinearán o dist
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
-## Enlaces de Interés
+## LISTADO ETIQUETAS HTML por funcionalidad
 
-HTML DOCTOR: Resumen de todas las etiquetas disponibles en HTML5
-[http://html5doctor.com/](http://html5doctor.com/)
+ continuación voy a indicarte cuales son las etiquetas HTML más usadas y también se indica su finalidad.
+
+En la siguiente [página](https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html) web teneís un listado detallado de todas las etiquetas HTML con ejemplo.
 
 
+<br><br><br>
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
+## Enlaces de interes:
+
+* [HTML DOCTOR: Resumen de todas las etiquetas disponibles en HTML5](http://html5doctor.com/)
+
+* [Lista etiquetas HTML con ejemplos](https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html)
+
+<iframe src="https://www.mclibre.org/consultar/htmlcss/html/html-etiquetas.html">
