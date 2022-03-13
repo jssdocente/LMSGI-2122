@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 2px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Tabla normal</h2>
+        <table>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <h2>Tabla con titulo</h2>
+        <table
+            summary="Tabla que contiene datos de ejemplo para poder explicar como construir tablas con el lenguaje HTML">
+            <caption>Tabla ejemplo</caption>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Tabla nombre columnas</h2>
+        <table
+            summary="Tabla que contiene datos de ejemplo para poder explicar como construir tablas con el lenguaje HTML">
+            <caption>Tabla ejemplo</caption>
+            <tr>
+                <th>Columna1</th>
+                <th>Columna2</th>
+                <th>Columna3</th>
+                <th>Columna4</th>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+                <td>Fila 1 Columna 3</td>
+                <td>Fila 1 Columna 4</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Agrupar columnas</h2>
+        <table>
+            <caption>Gastos Enero/Febrero</caption>
+            <tr>
+                <td colspan="2">Enero</td>
+                <td colspan="2">Febrero</td>
+            </tr>
+            <tr>
+                <td>Ingresos</td>
+                <td>Gastos</td>
+                <td>Ingresos</td>
+                <td>Gastos</td>
+            </tr>
+            <tr>
+                <td>1.000€</td>
+                <td>700€</td>
+                <td>1.100€</td>
+                <td>580€</td>
+            </tr>
+            <tr>
+                <td>1.800€</td>
+                <td>920€</td>
+                <td>1.750€</td>
+                <td>920€</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Agrupar filas</h2>
+        <table>
+            <caption>Gastos Enero/Febrero</caption>
+            <tr>
+                <td></td>
+                <td colspan="2">Enero</td>
+                <td colspan="2">Febrero</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Datos Económicos</td>
+                <td>Ingresos</td>
+                <td>Gastos</td>
+                <td>Ingresos</td>
+                <td>Gastos</td>
+            </tr>
+            <tr>
+                <td>1.000€</td>
+                <td>700€</td>
+                <td>1.100€</td>
+                <td>580€</td>
+            </tr>
+            <tr>
+                <td>1.800€</td>
+                <td>920€</td>
+                <td>1.750€</td>
+                <td>920€</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Con HTML5</h2>
+        <table>
+            <caption>Gastos Enero/Febrero</caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td colspan="2">Enero</td>
+                    <td colspan="2">Febrero</td>
+                </tr>
+                <!-- no funciona, se necesita pasar al tbody -->
+                <tr>
+                    <td rowspan="3">Datos Económicos</td>
+                    <td>Ingresos</td>
+                    <td>Gastos</td>
+                    <td>Ingresos</td>
+                    <td>Gastos</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.000€</td>
+                    <td>700€</td>
+                    <td>1.100€</td>
+                    <td>580€</td>
+                </tr>
+                <tr>
+                    <td>1.800€</td>
+                    <td>920€</td>
+                    <td>1.750€</td>
+                    <td>920€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
