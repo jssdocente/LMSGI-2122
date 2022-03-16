@@ -1,0 +1,112 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#main {
+  background-color: grey;
+}
+
+h1.especial {
+  color: blue;
+}
+
+h2,
+h3 {
+  border: 1px solid orange;
+}
+
+li {
+  color: red;
+}
+
+li li {
+  color: green;
+}
+
+p > img {
+  border: 5px solid black;
+}
+
+img[alt="segunda"] {
+  border: 5px solid red;
+}
+
+p ~ h3.antes {
+  background-color: pink;
+}
+p + h3 {
+  background-color: blue;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.tabla {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid gray ;
+}
+
+.tabla tr:nth-child(even) {
+  background-color: rgba(238, 158, 198, 0.568);
+}
+
+.tabla tr:nth-child(odd) {
+  background-color: rgba(173, 158, 238, 0.568);
+}
+
+.tabla tr:first-child {
+  background-color: rgba(224, 235, 194, 0.678);
+}
+
+.tabla tr:nth-child(4) {
+  background-color: red
+}
+
+/* Encadenando su aplicación */
+.tabla tr:not(:first-child):hover {
+  background-color: green;
+}
+
+/* diseño para lista */
+
+.lista li:nth-child(-n+3) {
+  color:lightblue
+}
+
+.pselto > .primera-letra::first-letter {
+  font-size: 3em;
+}
+
+.pselto > .primera-linea::first-line {
+  font-size: 3em;
+}
+
+/* diseño para enlaces */
+.enlaces li::after {
+  content:  " →";
+}
+
+.pselto2 .exciting-text::after {
+  content: " <- EXCITANTE!";
+  color: green;
+}
+
+.pselto2 .boring-text::after {
+  content: " <- ABURRIDO";
+  color: red;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores en CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- selecciones con identificador-->
+    <p id="main">
+        Este párrafo se selecciona con el selector #id
+    </p>
+
+
+    <!-- seleccionando elementos con clase -->
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+
+    <!--selección de varios elementos-->
+    <h2>Varios elementos</h2>
+    <h3>Varios elementos</h3>
+
+    <!-- dentro de otro -->
+    <ul>
+        <li>Primero</li>
+        <li>Segundo
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Hijo directo -->
+    <h3 class="antes">Antes</h3>
+
+    <p>
+        <img width="100px" src="img/openwebinars-logo.jpg" />
+        <span><img width="100px" src="img/openwebinars-logo.jpg" alt="segunda" /></span>
+    </p>
+
+    <h3>Después</h3>
+
+    <!-- pseudo-clases: estado -->
+    <a href="#">Esto es un enlace</a>
+
+    <!-- pseudo-clases -->
+
+    <div class="tabla">
+        <h3>Pseudo-clases dentro de tabla</h3>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Skimmed Milk</td>
+                <td>250 mls</td>
+            </tr>
+            <tr>
+                <td>75% Dark Chocolate</td>
+                <td>Two squares (10g)</td>
+            </tr>
+            <tr>
+                <td>Cinnamon</td>
+                <td>A pinch</td>
+            </tr>
+            <tr>
+                <td>Honey</td>
+                <td>1 tsp</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="lista">
+        <h3>Pseudo-clases dentro de li</h3>
+        <ul>
+            <li>Chad Bakersfield</li>
+            <li>Laura Patel</li>
+            <li>Eddie Mahoney</li>
+            <li>Edna Jamieson</li>
+            <li>Lesley Spencer</li>
+            <li>James Moffat</li>
+            <li>Olivia Lindsay</li>
+            <ul>
+    </div>
+
+    <!-- pseudo-elementos -->
+
+    <div class="pselto">
+        <p class="primera-letra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, perferendis!
+            Cumque officiis iure possimus repudiandae dignissimos distinctio obcaecati neque quas?</p>
+        <p class="primera-linea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda maiores, ipsa nobis
+            labore dicta ipsum, veritatis nam iste fugit corporis, repudiandae recusandae magni illum id dolorum hic
+            temporibus officiis optio molestias voluptate iusto laborum dolorem aliquid. Explicabo optio animi nihil
+            alias facere perspiciatis, necessitatibus quam iusto dignissimos accusantium laudantium minima atque.
+            Aspernatur molestiae consequatur totam quo culpa repudiandae odit doloremque! Distinctio harum quasi
+            dignissimos unde sunt facere, pariatur rerum, cupiditate eos dolores praesentium accusantium iure natus
+            repudiandae vero quo, totam veritatis placeat porro. Unde consequuntur provident laborum nemo porro optio
+            quisquam saepe sit minima distinctio culpa repellendus omnis, deserunt aspernatur?</p>
+    </div>
+
+    <!-- pseudo-elementos -->
+    <div class="enlaces">
+        <h4>Pesudo-elementos after</h4>
+        <li><a href="#">enlace 1</a></li>
+        <li><a href="#">enlace 2</a></li>
+        <li><a href="#">enlace 3</a></li>
+        <li><a href="#">enlace 4</a></li>
+        <li><a href="#">enlace 5</a></li>
+    </div>
+
+    <div class="pselto2">
+        <h4>Pesudo-elementos after</h4>
+        <p class="boring-text">Here is some plain old boring text.</p>
+        <p>Here is some normal text that is neither boring nor exciting.</p>
+        <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+    </div>
+
+</body>
+
+</html>
