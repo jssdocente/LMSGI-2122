@@ -1,0 +1,78 @@
+
+/* Valor por defecto */
+
+/* Layout para 1columna */
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer"
+}
+
+.main-head {
+    grid-area: header;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.content {
+    grid-area: content;
+    background-color: aliceblue;
+}
+
+.main-nav {
+    grid-area: nav;
+    background-color:aqua;
+    padding: 10px;
+}
+
+.side {
+    grid-area: sidebar;
+    background-color:beige; 
+}
+
+.ad {
+    grid-area: ad;
+    background-color:blueviolet; 
+}
+
+.main-footer {
+    grid-area: footer;
+    background-color: brown;
+    padding: 1em;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+.wrapper {
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    "header header  header"
+    "nav    content sidebar"
+    "nav    content ad"
+    "footer footer  footer"
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
