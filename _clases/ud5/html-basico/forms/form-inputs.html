@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <div class="main-block">
+        <h1>Registro</h1>
+        <form action="/">
+          <hr>
+          <div class="account-type">
+            <input type="radio" value="none" id="radioOne" name="account" checked/>
+            <label for="radioOne" class="radio">Personal</label>
+            <input type="radio" value="none" id="radioTwo" name="account" />
+            <label for="radioTwo" class="radio">Empresa</label>
+          </div>
+          <hr>
+          <div>
+              <label for="email">Email: </i></label>
+              <input type="text" name="email" id="email" placeholder="Email" required/><br>
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Name" required/><br>
+              <label for="password">Contraseña:</label>
+              <input type="password" name="password" id="password" placeholder="Password" required/>
+          </div>
+          <hr>
+          <div>
+              <label for="descripcion">Descripcion</label>
+              <textarea name="descipcion" id="" cols="50" rows="5"></textarea>
+          </div>
+          <hr>
+          <div>
+            Aficiones:<br>  
+            <input type="checkbox" id="cricket" name="cricket" value="cricket"/>  
+               <label for="cricket">Cricket</label> <br>  
+            <input type="checkbox" id="football" name="football" value="football"/>  
+               <label for="football">Football</label> <br>  
+            <input type="checkbox" id="hockey" name="hockey" value="hockey"/>  
+               <label for="hockey">Hockey</label>  
+          </div>
+          <hr>
+          <div>
+            <label for="start">Fecha nacimiento:</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2022-01-01" max="2022-12-31">
+          </div>
+          <hr>
+          <div>
+            <label>Seleccione el fichero:</label>
+            <input type="file" accept="image/*, text/*" name="file">
+          </div>
+          <hr>
+          <div>
+            <label>Color: </label>
+            <input type="color" name="color">
+          </div>
+          <hr>
+          <div>
+            <input type="image" name="image" height="30" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png" alt="Logotipo">
+          </div>
+          <hr>
+          <div>
+            <label for="nhijos">Nº Hijos: </label>
+            <input type="number" name="number" id="nhijos">
+          </div>
+          <hr>
+          <div>
+            <label for="numtel">Teléfono: </label>
+            <input type="tel" name="tel" id="numtel">
+          </div>
+          <hr>
+          <div>
+            <label for="temperatura">Temperatura: </label>
+            <input type="range" name="range" id="temperatura" min="0" max="25">
+          </div>
+          <hr>  
+          <div class="gender">
+              Genero:
+            <input type="radio" value="none" id="male" name="gender" checked/>
+            <label for="male" class="radio">Hombre</label>
+            <input type="radio" value="none" id="female" name="gender" />
+            <label for="female" class="radio">Mujer</label>
+          </div>
+          <hr>
+          <div class="btn-block">
+            <p>Haciendo click en registrar aceptas <a href="https://www.w3docs.com/privacy-policy">política de privacidad</a>.</p>
+            <button type="submit" href="/">Registar</button>
+            <hr>
+            <br>
+            <button type="reset" href="/">Resetear</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
