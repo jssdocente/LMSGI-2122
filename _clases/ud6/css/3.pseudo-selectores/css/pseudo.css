@@ -43,3 +43,8 @@ p::after {
   content: "FIN";
   border: 1px solid green;
 }
+
+p::selection {
+  color: red
+}
+
