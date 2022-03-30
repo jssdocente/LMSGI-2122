@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 70%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tbody tr td {
+    border-bottom: 1px solid #555555;
+    padding: 10px;
+  }
+  thead th {
+    padding: 10px;
+  }
+  
+  img {
+    width: 40px;
+  }
+
+  
+  table.hidden thead {
+    background-color: #555555;
+    color: white;
+  }
+  
+  /* ESTILOS PARA OCULTAR CIERTAS COLUMNAS */
+  @media screen and (max-width: 576px) {
+    .hidden td.primero,
+    .hidden th.primero {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hidden td.segundo,
+    .hidden th.segundo {
+      display: none;
+    }
+  }

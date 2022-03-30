@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1200px;
+  /*En los ejemplos anteriores cuando cambiabamos el porcentaje de un elemento
+   teníamos que poner que flotara a la izquierda. Con esta propiedad ya no hace
+   falta ponerlo */
+  display: flex;
+  /* Esto indica si los "hijos" deben permanecer en la misma línea o pueden fluir
+   en varias líneas.
+   En este caso los elementos flex son colocados en varias líneas*/
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 200px;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+
+@media screen and (min-width: 576px) {
+  .green,
+  .yellow {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .green,
+  .yellow,
+  .blue {
+    width: 33.33333%;
+  }
+}

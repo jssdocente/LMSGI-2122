@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 70%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr td {
+    border-bottom: 1px solid #555555;
+    padding: 10px;
+}
+
+thead th {
+    padding: 10px;
+}
+
+img {
+    width: 40px;
+}
+
+div.scroll table thead {
+    background-color: blue;
+    color: white;
+}
+
+div.scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* ESTILOS PARA EL SCROLL CONTROLADO */
+div.scroll table {
+    margin-top: 50px;
+}
+

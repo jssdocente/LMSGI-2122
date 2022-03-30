@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 70%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr td {
+    border-bottom: 1px solid #555555;
+    padding: 10px;
+}
+
+thead th {
+    padding: 10px;
+}
+
+img {
+    width: 40px;
+}
+
+
+/* ESTILOS PARA LA CONVERSIÓN A LISTAS */
+table.listas {
+    margin-top: 50px;
+}
+
+table.listas thead {
+    background-color: red;
+    color: white;
+}
+
+/* Para pantallas menores de 700px la tabla se pasa a bloque*/
+@media screen and (max-width: 700px) {
+
+    table.listas,
+    table.listas thead,
+    table.listas tbody,
+    table.listas tr,
+    table.listas th,
+    table.listas td {
+        display: block;
+    }
+
+    /* Se oculta la cabecera de la tabla.
+    Problemático para lectores con discapacidad */
+    table.listas thead {
+        display: none;
+    }
+
+    table.listas td {
+        padding-left: 50px;
+    position: relative;        
+    }
+
+    /* Antes de los td ...*/
+    table.listas td:before {
+        background-color: red;
+        color: white;
+        content: attr(data-th);
+        height: 50%;
+        font-weight: bold;
+        left: 30%;
+        padding: 5px;
+        position: absolute;
+    }
+}

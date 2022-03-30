@@ -1,0 +1,36 @@
+* {
+    /* Esta propiedad sirve para indicar cómo se deben calcular las medidas de un elemento. 
+       Por ejemplo en una caja, el tamaño sería: width + padding + border
+
+       Usando box-sizing: border-box, lo que conseguimos es decir que el padding y el border formen parte del cálculo del ancho de caja
+       y no se sume este al final de ese cálculo
+       
+    */
+    box-sizing: border-box;
+}
+
+.container{
+    /* Siempre tendrá el 80% del viewport y 20pxx de margen arriba y abajo y automático de izquierda a derecha*/
+    margin: 20px auto;
+    width: 80%;
+}
+
+.header {
+    background-color: red;
+    height: 100px;
+}
+
+.menu, .main{
+    float: left;
+    height: 400px;
+}
+
+.main{
+    background-color: blue;
+    width: 80%;
+}
+
+.menu{
+    background-color: yellow;
+    width: 20%;
+}

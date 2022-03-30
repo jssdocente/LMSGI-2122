@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  margin: 0px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+  height: 100%;
+  float: left;  
+  /*Con esto consigue que el color rojo esté oculto inicialmente*/
+  transform: translate(-300px, 0);
+
+  /*Con esto hacemos que se haga una transición.
+  nombre de la propiedad | duración | retardo --> ease (empieza lento, continua rápido y vuelve lento)
+  */
+  transition: transform 0.5s ease;  
+  width: 300px;
+}
+
+.blue {
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .red {
+    transform: translate(0px);
+  }
+}
