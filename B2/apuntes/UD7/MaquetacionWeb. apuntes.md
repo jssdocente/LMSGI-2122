@@ -60,7 +60,7 @@ Un ejemplo de Maquetación muy claro es la siguiente imagen:
 
 <br>
 
-![](res/Maquetar_ejemplos.png)
+![](res/img/Maquetar_ejemplos.png)
 
 Cada cuadrado de la imagen no es más que una zona de mi página web, o sea que maquetar no es más que definir cada uno de esos cuadrados que van a dar la apariencia visual de mi página web.
 
