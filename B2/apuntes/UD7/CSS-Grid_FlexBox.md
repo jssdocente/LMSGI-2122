@@ -181,7 +181,7 @@ En ocasiones puedo necesitar que un elemento flexible tenga una alineación vert
 
 <br><hr>
 
-**A jugar**
+▶️ **A jugar**
 
 Vamos a ver ahora todas las propiedades en acción de forma muy visual a través de este [página](https://codepen.io/enxaneta/full/adLPwv/) donde vamos a poder jugar con todas las propiedades.
 <hr>
@@ -191,10 +191,30 @@ Vamos a ver ahora todas las propiedades en acción de forma muy visual a través
 
 Aquí teneís una [página](https://philipwalton.github.io/solved-by-flexbox/) web maquetada con FlexBox... 
 
-![](res/img/../Page_makeWithFlexBox.png)
+<div style="position: relative">
+<a href="https://philipwalton.github.io/solved-by-flexbox/">
+    <img src="res/img/../Page_makeWithFlexBox.png" width="70%" style="margin: auto 100px; border:1px solid red">
+    </img>
+</a>
+</div>
+
+📝 Y un resumen para recordar todas las configuraciones:
+
+
+<div style="height: 400px; position: relative; overflow-y: none">
+<a href="https://d33wubrfki0l68.cloudfront.net/1568560c9e488c136e10bdb4ee7a3f62ec866649/41bbc/content/2014/oct/flexboxsheet.png">
+<img src="https://d33wubrfki0l68.cloudfront.net/1568560c9e488c136e10bdb4ee7a3f62ec866649/41bbc/content/2014/oct/flexboxsheet.png" width="70%" style="margin: auto 100px; border:1px solid red; object-fit: cover;overflow: none">
+</img>
+</a>
+</div>
+
+<br><br>
+
+📝 Y un [resumen interactivo](https://yoksel.github.io/flex-cheatsheet/#section-display) muy chulo y sencillo...
+
+
  
-
-
+ 
 <br><br>
 
 ## 3. Grid
@@ -395,6 +415,46 @@ Es mucho más sencillo que usar los sistemas que había tradicionalmente en lo q
 Tenemos que tener en cuenta tanto FLEX como GRID a la hora de realizar la maquetación de nuestras web.
 
 Habrá cosas que solo podremos hacer o será más fácil de hacer de una u otra manera y otras cosas que podremos conseguir combinando las dos.
+
+<br><hr>
+
+▶️ **A jugar**
+
+Vamos a ver ahora todas las propiedades en acción de forma muy visual a través de este [página](https://alialaa.github.io/css-grid-cheat-sheet/) donde vamos a poder jugar con todas las propiedades.
+<hr>
+
+
+<mark> 💡 ¿ Y en la práctica algún ejemplo ?</mark>
+
+Aquí teneís una [página](https://grid-masterclass.webflow.io/) web maquetada con CSS-Grid... 
+
+<div style="position: relative">
+ <a href="https://https://curicullum.webflow.io/">
+    <img src="res/img/../Page_makeCSSGrid.png" width="70%" style="margin: auto 100px; border:1px solid">
+    </img>
+</a>
+</div>
+
+y otra ...
+
+<div style="position: relative">
+ <a href="https://grid-masterclass.webflow.io/">
+    <img src="res/img/../Page_makeCSSGrid_2.png" width="70%" style="margin: auto 100px; border:1px solid">
+</a>
+</img>
+</div>
+
+<br><br>
+
+📝 Y un [resumen interactivo](https://grid.malven.co/) muy chulo y sencillo...
+
+<div style="position: relative">
+ <a href="https://grid.malven.co/">
+    <img src="res/img/../CSSGrid_cheatSheet1.png" width="70%" style="margin: auto 100px; border:1px solid">
+</a>
+</img>
+</div>
+
 
 <br>
 <hr>
