@@ -189,7 +189,9 @@ Vamos a ver ahora todas las propiedades en acción de forma muy visual a través
 
 <mark> 💡 ¿ Y en la práctica algún ejemplo ?</mark>
 
-Aquí teneís una [página](https://philipwalton.github.io/solved-by-flexbox/) web maquetada con FlexBox... 
+Aquí teneís una página web maquetada con FlexBox... 
+
+<br>
 
 <div style="position: relative">
 <a href="https://philipwalton.github.io/solved-by-flexbox/">
@@ -198,8 +200,11 @@ Aquí teneís una [página](https://philipwalton.github.io/solved-by-flexbox/) w
 </a>
 </div>
 
+<br>
+
 📝 Y un resumen para recordar todas las configuraciones:
 
+<br>
 
 <div style="position: relative; overflow-y: none">
 <a href="https://d33wubrfki0l68.cloudfront.net/1568560c9e488c136e10bdb4ee7a3f62ec866649/41bbc/content/2014/oct/flexboxsheet.png">
@@ -426,7 +431,9 @@ Vamos a ver ahora todas las propiedades en acción de forma muy visual a través
 
 <mark> 💡 ¿ Y en la práctica algún ejemplo ?</mark>
 
-Aquí teneís una [página](https://grid-masterclass.webflow.io/) web maquetada con CSS-Grid... 
+Aquí teneís una web maquetada con CSS-Grid... 
+
+<br>
 
 <div style="position: relative">
  <a href="https://curicullum.webflow.io/">
@@ -437,6 +444,8 @@ Aquí teneís una [página](https://grid-masterclass.webflow.io/) web maquetada 
 
 y otra ...
 
+<br>
+
 <div style="position: relative">
  <a href="https://grid-masterclass.webflow.io/">
     <img src="res/img/../Page_makeCSSGrid_2.png" width="70%" style="margin: auto 100px; border:1px solid">
@@ -444,7 +453,7 @@ y otra ...
 </img>
 </div>
 
-<br><br>
+<br>
 
 📝 Y un [resumen interactivo](https://grid.malven.co/) muy chulo y sencillo...
 
@@ -473,14 +482,11 @@ Aprender FlexBox
    
 Aprender CSS-Grid
 
-1. [Grud Garden](https://cssgridgarden.com/#es) riega el jardin y aprende
-2. [Grid-attack](https://codingfantasy.com/games/css-grid-attack defiendete de los monstruos con CSS-Grid)
-3. 
+1. [Grid Garden](https://cssgridgarden.com/#es) riega el jardin y aprende
+2. [Grid-attack](https://codingfantasy.com/games/css-grid-attack) defiendete de los monstruos con CSS-Grid)
 
 <br><br>
 
-¿Donde continuar ahora?
+➡️ ¿Donde continuar ahora?
 
-
-
-[Maquetación y Diseño Responsivo con Flexbox y CSS Grid](CSS-Grid_FlexBox.md)
+[UD8. Diseño responsivo.](../UD8/DWR.%20apuntes.md)

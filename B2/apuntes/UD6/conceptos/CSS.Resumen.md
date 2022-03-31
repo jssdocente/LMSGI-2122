@@ -940,3 +940,9 @@ text-indent: 10px;
 /* Posibles valores: uppercase, lowercase, capitalize */
 text-transform: uppercase;
 ```
+
+<br><br>
+
+➡️ ¿Donde continuar ahora?
+
+[Aprender los conceptos fundamentales de CSS](../CSS.apuntes-principales.md/#conceptos-fundamentales----omit-in-toc)
