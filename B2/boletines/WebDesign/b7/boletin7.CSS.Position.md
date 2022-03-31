@@ -56,7 +56,7 @@ Para ello hay que utilizar la propiedad `position`, no se puede realizar con la 
 
 En base al código HTML y CSS de base suministrado conseguir el resultado que se muestra en la imagen.<br>
 
-![Resultado](img/03.Resultado_.gif)
+![Resultado](img/03_Resultado.gif)
 
 
 HTML base
