@@ -201,9 +201,9 @@ Aquí teneís una [página](https://philipwalton.github.io/solved-by-flexbox/) w
 📝 Y un resumen para recordar todas las configuraciones:
 
 
-<div style="height: 400px; position: relative; overflow-y: none">
+<div style="position: relative; overflow-y: none">
 <a href="https://d33wubrfki0l68.cloudfront.net/1568560c9e488c136e10bdb4ee7a3f62ec866649/41bbc/content/2014/oct/flexboxsheet.png">
-<img src="https://d33wubrfki0l68.cloudfront.net/1568560c9e488c136e10bdb4ee7a3f62ec866649/41bbc/content/2014/oct/flexboxsheet.png" width="70%" style="margin: auto 100px; border:1px solid red; object-fit: cover;overflow: none">
+<img src="res/img/../FlexBox_cheatSheet1.png" width="70%">
 </img>
 </a>
 </div>
@@ -429,7 +429,7 @@ Vamos a ver ahora todas las propiedades en acción de forma muy visual a través
 Aquí teneís una [página](https://grid-masterclass.webflow.io/) web maquetada con CSS-Grid... 
 
 <div style="position: relative">
- <a href="https://https://curicullum.webflow.io/">
+ <a href="https://curicullum.webflow.io/">
     <img src="res/img/../Page_makeCSSGrid.png" width="70%" style="margin: auto 100px; border:1px solid">
     </img>
 </a>
