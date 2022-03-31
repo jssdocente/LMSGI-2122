@@ -1,4 +1,4 @@
-# Maquetación y Diseño Responsivo:<br>CSS-Grid y FlexBox
+# Maquetación con CSS-Grid y FlexBox
 
 ## 0. Un poco de Historia
 

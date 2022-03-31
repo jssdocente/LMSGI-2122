@@ -315,7 +315,7 @@ css {
 
 ➡️ ¿Donde continuar ahora?
 
-[Maquetación y Diseño Responsivo con Flexbox y CSS Grid](CSS-Grid_FlexBox.md)
+[Maquetación con Flexbox y CSS Grid](CSS-Grid_FlexBox.md)
 
 
 
