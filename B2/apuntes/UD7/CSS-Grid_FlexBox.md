@@ -1,4 +1,21 @@
-# Diseño Web Responsivo con CSS-Grid y FlexBox
+# Maquetación y Diseño Responsivo:<br>CSS-Grid y FlexBox
+
+## 0. Un poco de Historia
+
+Al principio la maquetación se realizaba con Tablas `table`, puesto que normalmente una Web cumple con un formato *tabular*.
+
+De ahí se pasó a usar `floats`. La ventaja de los floats es que nuestro diseño no estaba plagado de etiquetas *td* y *tr* y se separaba el contenido del diseño, maquetando con CSS.<br>
+Pero los floats tenían un gran problema, nunca se diseñaron para la labor de *maquetación*. Su comentido era alinear imágenes y texto. Nada más. Por lo que se debían usar `hacks` (trucos CSS) para conseguir maquetar la web.
+
+Debido a que la maquetación se convirtió en algo muy complejo, surgieron muchos frameworks CSS, el más conocido Bootstrap, pero también tenemos otros como Normalize, ..
+
+Pasaron unos años hasta que el comité W3C decidió ponerse a trabajar en una solución que facilitase el maquetado y por ello propuso la especificación de `Flexbox`.
+
+Más adelante surguió CSS Grid, una solución más avanzada para las cada vez más complejas Webs.
+
+La diferencia básica entre `CSS Grid Layout y CSS Flexbox Layout` es que Flexbox se creó para diseños de una dimensión, en una fila o una columna. En cambio CSS Grid Layout se pensó para el diseño bidimensional, en varias filas y columnas al mismo tiempo
+
+<br><br>
 
 ## 1. Introducción
 
@@ -12,7 +29,7 @@ Los contenedores FLEX nos van a permitir:
 
 Los contenedores FLEX solo trabajan en una dirección, es decir en horizontal o en vertical, pero nunca las dos a la vez.
 
-![Imagen1](img/Imagen1.jpg)
+![Imagen1](res/img/Imagen1.jpg)
 
 Web de ayuda para contenedores Flex
 https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout
@@ -20,7 +37,7 @@ https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout
 ### 1.2. Grid
 Es un sistema de maquetación más potenten que el anterior ya que podemos trabajar con filas y columnas.
 
-![Imagen2](img/Imagen2.jpg)
+![Imagen2](res/img/Imagen2.jpg)
 
 Web de ayuda para contenedores Grid
 https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout
@@ -55,10 +72,10 @@ Las propiedades que podemos modificar de los elementos flexibles que están dent
 #### 2.1.2. Ajuste Elementos Flexibles (Si no caben) `flex-wrap`
 * `nowrap` (default): Todos los elementos en una misma línea aunque no quepan en ella
 * `wrap`: El elemento que no cabe pasa a la línea de abajo
-![Imagen3](img/Imagen3.jpg)
+![Imagen3](res/img/Imagen3.jpg)
 
 * `wrap-reverse`: El elemento que no cabe pasa a la línea de arriba.
-![Imagen4](img/Imagen4.jpg)
+![Imagen4](res/img/Imagen4.jpg)
 
 *Ejemplo: 02_Flex_Wrap.html*
 
@@ -74,7 +91,7 @@ Tendríamos en una misma propiedad la Dirección y el ajuste de los elementos. S
 * `space-around`: Distribuye el espacio restante entre los elementos pero no tiene en cuenta la distancia a los bordes
 * `space-evenly`: Distribuye el espacio restante entre los elementos y tiene en cuenta la distancia a los bordes
 
-![Imagen10](img/Imagen10.jpg)
+![Imagen10](res/img/Imagen10.jpg)
 
 *Ejemplo: 03_Justify_Content.html*
 
@@ -87,7 +104,7 @@ En la página https://flexboxfroggy.com/#es podéis jugar con una rana y probar 
 * `stretch`(no height): Estira los elementos para que ocupe el contenedor de arriba a abajo
 * `baseline`: Los elementos se alinean en relación con la primera línea de texto que posean los elementos flexibles.
 
-![Imagen11](img/Imagen11.jpg)
+![Imagen11](res/img/Imagen11.jpg)
 
 *Ejemplo: 04_Align_Items.html*
 
@@ -103,7 +120,7 @@ Con la propiedad `flex-wrap` conseguíamos decir cómo queremos que se comporten
 * `space-between`: ajusta el espacio entre los elementos después del wrap pero el primero y el último están en los bordes
 * `space-around`: Ajusta el espacio entre los elementos después del wrap pero no tiene en cuenta la distancia a los bordes superior e inferior.
 
-![Imagen12](img/Imagen12.jpg)
+![Imagen12](res/img/Imagen12.jpg)
 
 *Ejemplo: 05_Align_Contents.html*
 
@@ -125,11 +142,11 @@ Se pueden usar valores negativos.
 #### 2.2.2. Tamaño 
 * `flex-grow: Valor` (Default: 1):  Es el factor de crecimiento de un elemento flexible cuando se reparten el espacio libre del contenedor.
 
-![Imagen5](img/Imagen5.jpg)
+![Imagen5](res/img/Imagen5.jpg)
 
 * `flex-shrink`: Es el factor de contracción de un elemento flexible cuando el tamaño de todos sobrepasa el tamaño del contenedor.
 
-![Imagen6](img/Imagen6.jpg)
+![Imagen6](res/img/Imagen6.jpg)
 
 Ese espacio a encoger se repartirá atendiendo al valor que tengan los elementos flexibles en la propiedad `flex-shrink`.
 
@@ -158,9 +175,30 @@ En ocasiones puedo necesitar que un elemento flexible tenga una alineación vert
 * strecth (no debe tener altura establecida)
 * baseline
 
-![Imagen13](img/Imagen13.jpg)
+![Imagen13](res/img/Imagen13.jpg)
 
 *Ejemplo: 07_Alineacion.html*
+
+<br><hr>
+
+**A jugar**
+
+> Vamos a ver ahora todas las propiedades en acción de forma muy visual a través de este [página](https://codepen.io/enxaneta/full/adLPwv/) donde vamos a poder jugar con todas las propiedades.
+<hr>
+
+```
+💡 ¿ Y en la práctica algún ejemplo ?
+
+
+
+```
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+Pero cómo sería una página web maquetada con FlexBox... pues aquí tenéis una.
+
+<br><br>
 
 ## 3. Grid
 
@@ -172,7 +210,7 @@ Vamos a tener dos componentes:
 
 La estructura de un sitio web mediante GRID podría ser algo así:
 
-![Imagen2](img/Imagen2.jpg)
+![Imagen2](res/img/Imagen2.jpg)
 
 ### 3.1 Contenedor GRID. Propiedades.
 
@@ -224,7 +262,7 @@ Con esta propiedad podemos alinear horizontalmente el contenido de cada celda.
 * `justify-items: center`: Centra el contenido
 * `justify-items: stretch` (default): Estira el contenido para ocupar la celda entera.
 
-![Imagen14](img/Imagen14.jpg)
+![Imagen14](res/img/Imagen14.jpg)
 
 *Ejemplo: 08_GRID_Propiedades.html*
 
@@ -236,7 +274,7 @@ Con esta propiedad podemos alinear verticalmente el contenido de cada celda.
 * `align-items: center`: Centra el contenido
 * `align-items: stretch` (default): Estira el contenido para ocupar la celda entera.
 
-![Imagen15](img/Imagen15.jpg)
+![Imagen15](res/img/Imagen15.jpg)
 
 *Ejemplo: 08_GRID_Propiedades.html*
 
@@ -249,9 +287,9 @@ place-item: Vertical Horizontal
 #### 3.1.4 Distribución del GRID dentro del contenedor
 Si nuestro GRID no ocupa el contenedor completo podemos alinearlo horizontal `justify-content` y verticalmente `align-content`
 
-![Imagen6](img/Imagen7.jpg)
+![Imagen6](res/img/Imagen7.jpg)
 
-![Imagen7](img/Imagen8.jpg)
+![Imagen7](res/img/Imagen8.jpg)
 
 *Ejemplo: 09_GRID_justify_content.html*
 
@@ -280,7 +318,7 @@ Especificamos el area del Grid que va a ocupar cada elemento. Esto lo vamos a po
 * `grid-row-start`: Fila de comienzo del area.
 * `grid-row-end`: Fila de finalización del area.
 
-![Imagen16](img/Imagen16.jpg)
+![Imagen16](res/img/Imagen16.jpg)
 
 Normalmente se usan las siguientes propiedades con las que definimos el inicio y fin de las columnas y las filas:
 * `grid-column: Inicio / Fin`: Inicio y fin de las columnas.
@@ -313,7 +351,7 @@ Las propiedades, que se definen en el CONTENEDOR GRID, que nos van a permitir de
 * `grid-auto-columns`: Dará tamaño a las columnas de separación entre los límites del contenedor y la posición donde hemos dejado nuestro elemento.
 * `grid-auto-rows`: Dará tamaño a las filas de separación entre los límites del contenedor y la posición donde hemos dejado nuestro elemento.
 
-![Imagen17](img/Imagen17.jpg)
+![Imagen17](res/img/Imagen17.jpg)
 
 * `grid-auto-flow`: Para cuando tenemos elementos GRID sin una posición definida. Puede tener los siguientes valores:
     * `row`(Default): Rellena primero las filas.
@@ -329,7 +367,7 @@ Si no queremos especificar el tamaño para cada zona del GRID podemos darles nom
 
 Sería algo parecido a hacer un plano de nuestro GRID.
 
-![Imagen9](img/Imagen9.jpg)
+![Imagen9](res/img/Imagen9.jpg)
 
 *Ejemplo: 11_GRID_AREA.html*
 
@@ -354,8 +392,38 @@ Es mucho más sencillo que usar los sistemas que había tradicionalmente en lo q
 ### 4.4 Desventajas de Usar GRID
 * Es complicada conseguir la alineación de los elementos que están dentro de las celdas.
 
+<br><br>
+
 ### 4.5 Conclusiones
 Tenemos que tener en cuenta tanto FLEX como GRID a la hora de realizar la maquetación de nuestras web.
 
 Habrá cosas que solo podremos hacer o será más fácil de hacer de una u otra manera y otras cosas que podremos conseguir combinando las dos.
 
+<br>
+<hr>
+<br>
+
+### APRENDER JUGANDO
+
+Flexbox y CSS-Grid son técnicas muy poderosas que al principio parecen muy intimidantes y difíciles de aprender.<br>
+Aquí teneis una serie de juegos que os facilitarán el aprendizaje:
+
+Aprender FlexBox
+
+1. [FlexBox Froggy](https://flexboxfroggy.com/#es) (aprender jugando con las ranas)
+2. [FlexBox defense](http://www.flexboxdefense.com/) defiendete con FlexBox.
+3. [Flex Box Aventuras](https://codingfantasy.com/games/flexboxadventure/play) rescata a la princesa con tus habilidades y flexbox.
+   
+Aprender CSS-Grid
+
+1. [Grud Garden](https://cssgridgarden.com/#es) riega el jardin y aprende
+2. [Grid-attack](https://codingfantasy.com/games/css-grid-attack defiendete de los monstruos con CSS-Grid)
+3. 
+
+<br><br>
+
+¿Donde continuar ahora?
+
+
+
+[Maquetación y Diseño Responsivo con Flexbox y CSS Grid](CSS-Grid_FlexBox.md)

@@ -311,39 +311,11 @@ css {
 > Ejemplo: ejemplos/position [04 Propiedad-Position](ejemplos/04.position/positioning.html)
 
 
+<br><br>
 
+¿Donde continuar ahora?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Maquetación y Diseño Responsivo con Flexbox y CSS Grid](CSS-Grid_FlexBox.md)
 
 
 
@@ -351,7 +323,7 @@ css {
 
 <br><br><br><br><br>
 
-### Articulos interesantes
+### Articulos interesantes para profundizar
 <br>
 
 1. **[Normal Fow](https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Normal_Flow)**
