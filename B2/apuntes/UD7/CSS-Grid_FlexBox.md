@@ -436,17 +436,6 @@ Aquí teneís una web maquetada con CSS-Grid...
 <br>
 
 <div style="position: relative">
- <a href="https://curicullum.webflow.io/">
-    <img src="res/img/../Page_makeCSSGrid.png" width="70%" style="margin: auto 100px; border:1px solid">
-    </img>
-</a>
-</div>
-
-y otra ...
-
-<br>
-
-<div style="position: relative">
  <a href="https://grid-masterclass.webflow.io/">
     <img src="res/img/../Page_makeCSSGrid_2.png" width="70%" style="margin: auto 100px; border:1px solid">
 </a>
