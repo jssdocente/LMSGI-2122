@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: snow;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.item {
+  padding: 8px;
+  background-color: white;
+  border: 2px solid tomato;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+
+}
+
+.height-50 {
+  height: 50vh;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  row-gap: 12px;
+  column-gap: 12px;
+
+  /* definir las areas */
+  grid-template-areas: 
+  "header"
+  "navigation"
+  "main"
+  "sidebar"
+  "ads"
+  "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.navigation {
+  grid-column: nav;
+}
+
+.sidebar {
+  grid-column: sidebar;
+}
+
+.main {
+  grid-column: main;
+}
+
+.ads {
+  grid-column: ads;
+}
+
+.footer {
+  grid-column: footer;
+}
+
+@media (min-width: 720px) {
+
+ .container {
+   grid-template-rows: auto auto 1fr auto;
+   grid-template-areas: 
+   "header header header"
+   "nav nav nav"
+   "sidebar main main"
+   "ads footer footer";
+ }
+
+}
+
+@media (min-width: 1020px) {
+
+  .container {
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar nav nav ads"
+    "sidebar main ads"
+    "footer footer footer footer";
+  }
+
+}
