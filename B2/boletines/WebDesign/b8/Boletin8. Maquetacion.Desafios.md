@@ -85,6 +85,40 @@ Imagen de ejemplo:
 
 ![](img/../res/calculator_layout_preview.png)
 
+<br><br>
 
+## Ejercicio 3. CALCULADORA BÁSICA MODELO-2
+
+<br>
+
+En este ejercicio la idea es maquetar una calculadora con CSS-Grid y/o FlexBox.
+
+Diseñar una calculadora (diseño) como aparece en la imagen.
+
+`Tareas a realizar`:
+
+1. Los números y las operaciones se introducen pulsando sobre los botones de los números y operadores. El display/pantalla es solo lectura.
+2. Debe incluir todos los botones que se muestran en la imagen, y con el tamaño, color y las posiciones iguales.
+3. La calculadora debe estar centrada tanto Vertical como Horizontalmente, apareciendo en el centro de la pantalla/viewport.
+4. También como se muestra en el gif, los botones tienen que cambiar de color cuando se hace click sobre ellos. Tip: Utilizar pseudoclase.
+5. Se debe centrar la calculadora en la pantalla/viewport utilizado Flexbox.
+   
+Notas:
+
+* El fondo degradado se consigue aplicando los colores #74ebd5 y #acb6e5, con un angulo de 236deg.
+* Para obtener los colores exactos desde la imagen, utilizar el Plugin de Chrome `[VisBug](https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=es)' 
+
+<br><br>
+
+Imagen de ejemplo:
+
+![](img/../res/calculator2_layout_preview.png)
+
+
+<br>
+
+Video de ejemplo:
+
+![](img/../res/calculator2_layout_preview.gif)
 
 
