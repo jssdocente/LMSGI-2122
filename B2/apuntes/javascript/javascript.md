@@ -1,13 +1,19 @@
-# JavaScript. Conceptos clave
+# JavaScript. Básico y General
 
 - [¿Qué es Javascript?](#que-es-javascript)
 - [Variables](#variables)
+- [Tipos de datos](#tipos-de-datos)
 - [Funciones](#funciones)
 - [Objetos](#objetos)
 - [Condicionales](#condicionales)
 - [Estructuras de control](#estructuras-de-control)
 - [Arrays](#arrays)
 
+
+## JavaScript. Aplicado a la Web
+
+- [DOM: Document Object Model](#)
+- 
 
 <br><br><br>
 
@@ -45,9 +51,19 @@ Forma de declarar variables de forma general.
 Notas a destacar:
 
 * El ; es opcional
-* No se indica el tipo, solo "var" o "let".
+* No se indica el tipo, solo "var", "let" o "const"
   * Con "var" un variable se puede modificar
-  * Con "let" es inmutable, y no puede cambiar su valor, como si fuera constante.
+  * Con "let"
+  * Con "const" es inmutable, y no puede cambiar su valor, como si fuera constante.
+
+La diferencia principal entre 'var' y 'let' radica en el 'scope (ámbito).
+
+* "var": ambito de función, o global si la variable no está dentro de una función. 
+* "let" y "const": ámbito de bloque. La función también se considera un bloque, al igual que un If, un bucle for, ...
+
+La diferencia entre 'let' y 'const' es que con 'let' la variable se puede modificar, y con 'const' no puede cambiar de valor.
+
+[En este video se explica muy bien estos conceptos](https://youtu.be/bvkY9ey83yY)
 
 ```javascript
 var nombre = 'Sacha', apellido = 'Lifszyc'
@@ -60,6 +76,26 @@ console.log('Tengo ' + edad)
 
 var peso = 75
 ```
+
+## Tipos de datos
+
+Los tipos de datos más importantes en JS son las cadenas (strings) y los numeros. Pero a diferencia de otros lenguajes, los tipos están agrupados en digamos categorias, y no existen subtipos.
+
+Existen 6 tipos primitivos:
+
+* Undefined: Una variable a la que no se le ha asignado un valor tiene el valor undefined.  typeof=="undefined"
+* Boolean: 2 valores, true o false. typeof=="boolean" 
+* Number: Se agrupan todos los valores numéricos. Decimales y enteros. <br>
+  2 tipos numéricos integrados. `Number` y `BigInt`. <br>
+  typeof=="number" 
+* BigInt: Numeros muy grandes. typeof=="bigint" 
+* Symbol: Un símbolo es un valor primitivo único e inmutable y se puede utilizar como clave de una propiedad de objeto.  typeof=="symbol" 
+
+Otros tipos especiales:
+
+* Null:  typeof instance === "object"
+* Object: typeof instance === "object"
+* Function: typeof instance === "function"
 
 ### Cadenas
 
@@ -123,7 +159,7 @@ var cantidadDePorcionesPorPersona = pizza / personas
 
 ## Funciones
 
-Las funciones con un elemento fundamental es JS, y su uso muchas veces confunde, ya que una función puede ser almacenada en un variable.
+Las funciones son un elemento fundamental es JS, y su uso muchas veces confunde, ya que una función puede ser almacenada en un variable.
 
 ```javascript
 var nombre = 'Sacha', edad = 28
@@ -144,7 +180,7 @@ function diHola() {
 }
 
 // Almacenar en variable
-var fncDiHola = diHola
+const fncDiHola = diHola
 
 //ejecutar función desde variable con los paréntesis
 fncDiHola()
@@ -158,119 +194,9 @@ function DecirHola_desdeFuncion(fncDecirHola) {
 
 ```
 
-**Alcance de las funciones**
+[En este video tenéis una explicación más detallada](https://youtu.be/21r6TEJh_Y0?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
 
-Todo lo que se declare dentro de un fichero .js, se dice que se define a nivel global, y por tanto puede ser accedida desde cualquier función declarada dentro de ese fichero ".js".
-
-Dentro del Navegador existe una variable WINDOW que simula a la ventana del navegador abierto, y que tiene acceso a las variables globales y funciones.
-
-```javascript
-//Variable global
-var nombre = 'Simon'
-
-//Esta función modifica una variable a nivel global, y le cambia su valor ==> MAla práctica
-function imprimirNombreEnMayusculas(nombre) {
-  nombre = nombre.toUpperCase()
-  console.log(nombre)
-}
-
-imprimirNombreEnMayusculas(nombre)
-```
-
-La variable nombre al ser global puede ser accedida desde el navegador en su objeto "window" así "window.nombre". También puede acceder a las funciones declaradas en el fichero o scripts.
-
-
-## Objetos
-
-Un objeto en la vida real tiene propiedades y métodos, como por ejemplo "un coche". Un coche tiene una serie de propiedades "nombre, modelo, perso, color", y unos métodos "arrancar, parar, conducir, frenar".
-
-Para declarar objetos en JS se realiza de forma muy parecida a un diccioario en Python a través de los {}, utilizando "clave" y "valor"
-
-```javascript
-var coche = {
-    "nombre": "FIAT",
-    "modelo": "500",
-    "peso": 850,
-    "color": white
-}
-```
-
-Para acceder a las propiedades se puede acceder de 2 formar:
-
-* A través del objeto.propiedad
-* A través de los []
-
-```javascript
-var coche = {
-    "nombre": "FIAT",
-    "modelo": "500",
-    "peso": 850,
-    "color": white
-}
-
-console.log(coche.nombre)
-console.log(coche["nombre"])
-
-```
-
-Pero un objeto en JS puede también contener funciones, y esto es una carácteristica muy importante, muy parecido a como funciona JAVA, pues un objeto puede contener propiedades y métodos.
-
-```javascript
-const person = {
-  firstName: "John",
-  lastName : "Doe",
-  id       : 5566,
-  fullName : function() {
-    return this.firstName + " " + this.lastName;
-  }
-};
-
-console.log(person.firstName)
-console.log(person["firstName"])
-
-// Tambien podemos pasar este objeto como parámetro
-function ImprmirPersona(persona) {
-    console.log(persona.firstName)
-
-    // y también podemos ejecutar la funcion
-    persona.fullName()
-}
-
-Si el objeto que se le pase, no tiene esa clave dará un error.
-
-```
-
-
-**Desestructurar Objetos**
-
-Podemos desestructurar un objeto para asignar las propiedades deseadas simplemente, incluyendo el nombre de la variable como el nombre de la propiedad.
-
-```javascript
-// firstName tendra asignado el valor de person.firstName
-var { firstName } = person
-
-//varios valores
-var { firstName,lastName } = person
-
-// la expresión anterior es equivalente a:
-var firstName = person.firstName;
-var lastName = person.lastName
-
-```
-
-También se puede desestructurar en la llamada a una función, donde los parámetros que se requieran se obtienen directamten desde un objeto.
-
-```javascript
-// firstName tendra asignado el valor de person.firstName
-
-function PrintFullName({firstName, lastName}) {
-    console.log(`Me llamo ${firstName} ${lastName}`)
-}
-
-// Para llamar a la función simplemente pasamos el objeto completo
-PrintFullName(person)
-
-```
+<br>
 
 **Parámetros por referencia o por valor**
 
@@ -357,6 +283,169 @@ var persona2 = procesarCumpleaños(persona);
 console.log(`Tengo ${persona2.edad}} años`)
 
 ```
+
+<br>
+
+### Arrow Funcions
+
+En JS se puede asignar una función a una variable, algo que parece muy extraño al principio.
+
+```javascript
+
+//Esta función es anónima, no tiene nombre
+var esMayorDeEdad = function (persona) {
+    return persona.edad>=MAYOR_DE_EDAD
+}
+
+//Se ejecuta de esta forma
+if (esMayorEdad(persona)) {
+    console.log(`${persona.nombre} ES MAYOR DE EDAD`)
+} else {
+    console.log(`${persona.nombre} ES MENOR DE EDAD`)
+}
+
+//Y el resultado es exactamente igual que cuando lo ejecutamos directamente desde la función normal.
+
+```
+
+Pero con los "Arrow functions (=>)" podemos simplificar la asignación de funciones a variables
+
+```javascript
+//Se elimina la palabra "function" y se agregar una =>
+var esMayorDeEdad = (persona) => {
+    return persona.edad>=MAYOR_DE_EDAD
+}
+
+//De esta forma se simplifica y queda más claro la sintaxis
+```
+
+Podemos seguir simplificando, si solo tiene un parámetro, podemos eliminar los paréntesis
+
+```javascript
+
+//Se elimina la palabra "function" y se agregar una =>
+var esMayorDeEdad = persona => {
+    return persona.edad>=MAYOR_DE_EDAD
+}
+```
+
+Pero se puede simplificar más, si la función solo tiene una línea, podemos eliminar los "llaves ({})", dejar todo mucho más limpio.
+
+```javascript
+//Se elimina las llaves y la palabra return
+var esMayorDeEdad = persona => persona.edad>=MAYOR_DE_EDAD
+```
+
+Pero incluso podemos rizar más el rizo, y utilizar el operador para desestrucurar el objeto...
+
+
+```javascript
+//Se elimina las llaves y la palabra return
+var esMayorDeEdad = ({edad}) => edad>=MAYOR_DE_EDAD
+
+// Puffff.. explota la cabeza ¿Qué hace esto?
+// Este tipo de sintaxis hoy en día se utiliza mucho, y es recomendado que poco a poco nos acostumbremos a verla y a utilizarla
+
+```
+
+## Objetos
+
+Un objeto en la vida real tiene propiedades y métodos, como por ejemplo "un coche". Un coche tiene una serie de propiedades "nombre, modelo, perso, color", y unos métodos "arrancar, parar, conducir, frenar".
+
+Para declarar objetos en JS se realiza de forma muy parecida a un diccioario en Python a través de los {}, utilizando "clave" y "valor"
+
+[En este video se explica más en detalle y es interesante verlo antes de seguir leyendo](https://youtu.be/nO3SDEV3uJI?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+
+<br>
+
+```javascript
+var coche = {
+    "nombre": "FIAT",
+    "modelo": "500",
+    "peso": 850,
+    "color": white
+}
+```
+
+Para acceder a las propiedades se puede acceder de 2 formar:
+
+* A través del objeto.propiedad
+* A través de los []
+
+```javascript
+var coche = {
+    "nombre": "FIAT",
+    "modelo": "500",
+    "peso": 850,
+    "color": white
+}
+
+console.log(coche.nombre)
+console.log(coche["nombre"])
+
+```
+
+Pero un objeto en JS puede también contener funciones, y esto es una carácteristica muy importante, muy parecido a como funciona JAVA, pues un objeto puede contener propiedades y métodos.
+
+```javascript
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(person.firstName)
+console.log(person["firstName"])
+
+// Tambien podemos pasar este objeto como parámetro
+function ImprmirPersona(persona) {
+    console.log(persona.firstName)
+
+    // y también podemos ejecutar la funcion
+    persona.fullName()
+}
+
+Si el objeto que se le pase, no tiene esa clave dará un error.
+
+```
+
+
+
+**Desestructurar Objetos**
+
+Podemos desestructurar un objeto para asignar las propiedades deseadas simplemente, incluyendo el nombre de la variable como el nombre de la propiedad.
+
+```javascript
+// firstName tendra asignado el valor de person.firstName
+var { firstName } = person
+
+//varios valores
+var { firstName,lastName } = person
+
+// la expresión anterior es equivalente a:
+var firstName = person.firstName;
+var lastName = person.lastName
+
+```
+
+También se puede desestructurar en la llamada a una función, donde los parámetros que se requieran se obtienen directamten desde un objeto.
+
+```javascript
+// firstName tendra asignado el valor de person.firstName
+
+function PrintFullName({firstName, lastName}) {
+    console.log(`Me llamo ${firstName} ${lastName}`)
+}
+
+// Para llamar a la función simplemente pasamos el objeto completo
+PrintFullName(person)
+
+```
+
+
 
 ### Comparando objetos y variables
 
@@ -481,67 +570,7 @@ function esMayorEdad(persona) {
 
 ```
 
-### Arrow Funcions
 
-En JS se puede asignar una función a una variable, algo que parece muy extraño al principio.
-
-```javascript
-
-//Esta función es anónima, no tiene nombre
-var esMayorDeEdad = function (persona) {
-    return persona.edad>=MAYOR_DE_EDAD
-}
-
-//Se ejecuta de esta forma
-if (esMayorEdad(persona)) {
-    console.log(`${persona.nombre} ES MAYOR DE EDAD`)
-} else {
-    console.log(`${persona.nombre} ES MENOR DE EDAD`)
-}
-
-//Y el resultado es exactamente igual que cuando lo ejecutamos directamente desde la función normal.
-
-```
-
-Pero con los "Arrow functions (=>)" podemos simplificar la asignación de funciones a variables
-
-```javascript
-//Se elimina la palabra "function" y se agregar una =>
-var esMayorDeEdad = (persona) => {
-    return persona.edad>=MAYOR_DE_EDAD
-}
-
-//De esta forma se simplifica y queda más claro la sintaxis
-```
-
-Podemos seguir simplificando, si solo tiene un parámetro, podemos eliminar los paréntesis
-
-```javascript
-
-//Se elimina la palabra "function" y se agregar una =>
-var esMayorDeEdad = persona => {
-    return persona.edad>=MAYOR_DE_EDAD
-}
-```
-
-Pero se puede simplificar más, si la función solo tiene una línea, podemos eliminar los "llaves ({})", dejar todo mucho más limpio.
-
-```javascript
-//Se elimina las llaves y la palabra return
-var esMayorDeEdad = persona => persona.edad>=MAYOR_DE_EDAD
-```
-
-Pero incluso podemos rizar más el rizo, y utilizar el operador para desestrucurar el objeto...
-
-
-```javascript
-//Se elimina las llaves y la palabra return
-var esMayorDeEdad = ({edad}) => edad>=MAYOR_DE_EDAD
-
-// Puffff.. explota la cabeza ¿Qué hace esto?
-// Este tipo de sintaxis hoy en día se utiliza mucho, y es recomendado que poco a poco nos acostumbremos a verla y a utilizarla
-
-```
 
 ## Estructuras de control
 
@@ -879,3 +908,167 @@ Pues aplicando lo visto en Filter y Map, existen otras funciones sobre Arrays mu
 * Every: Si todos los elementos cumple una condición
 
 
+
+<br><br><br>
+
+
+# JavaScript: Aplicado a la Web
+
+## DOM: Document Object Model
+
+Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).
+
+En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, añadiendo nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc...
+
+El DOM puede ser accedido desde JS, y por tanto se pueden automatizar acciones y responder a acciones de botones, e infinidad de eventos tanto del usuario como del navegador.
+
+### Objeto Document
+
+En Javascript, la forma de acceder al DOM es a través de un objeto llamado `document`, que representa el árbol DOM de la página o pestaña del navegador donde nos encontramos. En su interior pueden existir varios tipos de elementos, pero principalmente serán `element`  o `node` :
+
+* `element`: no es más que la representación genérica de una etiqueta: HMTLElement
+* `node`: es una entidad más básica, la cúal puede ser un element o otro nodo.<br>
+  Los nodos pueden ser de diferentes tipos, los más usados son:<br>
+  - Element (1):  Es una etiqueta HTML.
+  - Attr : Un atributo de una etiqueta HTML.
+  - Text (3): Un texto dentro de un elemento o atributo.
+  - Comment Node (8): Un comentario de texto en HTML
+  
+Todos los elementos HTML tendrán un tipo de dato específico:
+
+<table>
+<thead>
+<tr>
+<th>Tipo de dato</th>
+<th>Tipo específico</th>
+<th>Etiqueta</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><badge-type class="element"></badge-type> <code>HTMLElement</code></td>
+<td><code>HTMLDivElement</code></td>
+<td><code>&lt;div&gt;</code></td>
+<td>Capa divisoria invisible (en bloque).</td>
+</tr>
+<tr>
+<td><badge-type class="element"></badge-type> <code>HTMLElement</code></td>
+<td><code>HTMLSpanElement</code></td>
+<td><code>&lt;span&gt;</code></td>
+<td>Capa divisoria invisible (en línea).</td>
+</tr>
+<tr>
+<td><badge-type class="element"></badge-type> <code>HTMLElement</code></td>
+<td><code>HTMLImageElement</code></td>
+<td><code>&lt;img&gt;</code></td>
+<td>Imagen.</td>
+</tr>
+<tr>
+<td><badge-type class="element"></badge-type> <code>HTMLElement</code></td>
+<td><code>HTMLAudioElement</code></td>
+<td><code>&lt;audio&gt;</code></td>
+<td>Contenedor de audio.</td>
+</tr>
+</tbody>
+</table>
+
+El DOM no está incluido de forma nativa como parte del lenguaje de JS, sino que es una API que permite acceder al DOM utilizando el lenguaje JS y que viene integrado en el navegador.
+
+![](img/DOM_img.png)
+
+Como se ve en la imagen, ese pequeño fragmento HTML se representa en forma de arbol, el DOM en la figura de la derecha.
+
+<table class="medium">
+<thead>
+<tr>
+<th>Acciones en DOM</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔍<a href="https://lenguajejs.com/javascript/dom/seleccionar-elementos-dom/"><strong>Buscar etiquetas</strong></a></td>
+<td>Familia de métodos entre los que se encuentran funciones como <code>.getElementById()</code>, <code>.querySelector()</code> o <code>.querySelectorAll()</code>, entre otras.</td>
+</tr>
+<tr>
+<td>🔮<a href="https://lenguajejs.com/javascript/dom/crear-elementos-dom/"><strong>Crear etiquetas</strong></a></td>
+<td>Una serie de métodos y consejos para crear elementos en la página y trabajar con ellos de forma dinámica.</td>
+</tr>
+<tr>
+<td>🔌<a href="https://lenguajejs.com/javascript/dom/insertar-elementos-dom/"><strong>Insertar etiquetas</strong></a></td>
+<td>Las mejores formas de añadir elementos al DOM, ya sea utilizando propiedades como <code>.innerHTML</code> o método como <code>.appendChild()</code>, <code>.insertAdjacentHTML()</code>, entre otros.</td>
+</tr>
+<tr>
+
+</tbody>
+</table>
+
+<br><br>
+
+En este serie de videos se explica mucho más en profundidad el uso del DOM:
+
+* [¿Qué es y para que sirve el DOM](https://youtu.be/OqfhPpJeJ-c?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Seleccionar elementos del DOM](https://youtu.be/_aMg42Zqxa8?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Moidificar atributos y clases](https://youtu.be/vAw2pYQzG30?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Eventos: Ratón y teclado](https://youtu.be/Up67WpXIy70?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Eventos: Objeto evento](https://youtu.be/UVPnw_APpAk?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Crear e insertar elementos](https://youtu.be/XydYN4ZQL9s?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Atravesar el DOM o DOM Traversing](https://youtu.be/ZgomZF_Eaao?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+* [Objetos nativos y timers](https://youtu.be/DxcnQD-fmOg?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+# CONTENIDO EXTRA
+
+<br>
+
+**Operador Spread**
+
+El Spread operador se introdujo con ES6 y es un operador algo más avanzado pero que su aprendizaje ahorra mucho tiempo, y es muy aconsejable su aprendizaje.
+
+[Ver este video explicativo del operdor Spread](https://youtu.be/5tKPYrtHHEk?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+
+<br>
+
+**Alcance de las funciones**
+
+Todo lo que se declare dentro de un fichero .js, se dice que se define a nivel global, y por tanto puede ser accedida desde cualquier función declarada dentro de ese fichero ".js".
+
+Dentro del Navegador existe una variable WINDOW que simula a la ventana del navegador abierto, y que tiene acceso a las variables globales y funciones.
+
+```javascript
+//Variable global
+var nombre = 'Simon'
+
+//Esta función modifica una variable a nivel global, y le cambia su valor ==> MAla práctica
+function imprimirNombreEnMayusculas(nombre) {
+  nombre = nombre.toUpperCase()
+  console.log(nombre)
+}
+
+imprimirNombreEnMayusculas(nombre)
+```
+
+La variable nombre al ser global puede ser accedida desde el navegador en su objeto "window" así "window.nombre". También puede acceder a las funciones declaradas en el fichero o scripts.
