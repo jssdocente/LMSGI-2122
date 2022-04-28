@@ -16,7 +16,9 @@
 - [Box-sizing: Border-box ¿qué es y para qué sirve?](conceptos/CSS.Box-sizing.md)
 - [Especificidad en CSS: ¿Qué es y cómo funciona?](conceptos/CSS.Especificidad.md)
 - [CSS Flow Layout](https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Normal_Flow) (inglés)
-- [Reset CSS](conceptos/CSS.Reset.md)<br><br>
+- [Reset CSS](conceptos/CSS.Reset.md)
+- [Colores en CSS](conceptos/CSS.Colores.md)
+- [Fuentes en CSS](conceptos/CSS.Fuentes.md)<br><br>
 
 #### También importante:  <!-- omit in toc --> 
 - [Especificidad en CSS: ¿Qué es y cómo funciona?](conceptos/CSS.Especificidad.md)
