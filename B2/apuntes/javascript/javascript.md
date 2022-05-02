@@ -8,14 +8,10 @@
 - [Condicionales](#condicionales)
 - [Estructuras de control](#estructuras-de-control)
 - [Arrays](#arrays)
+- Javascript aplicado ala Web [DOM: Document Object Model](#javascript-aplicado-a-la-web)
 
-
-## JavaScript. Aplicado a la Web
-
-- [DOM: Document Object Model](#)
-- 
-
-<br><br><br>
+<br>
+<br>
 
 ## ¿Qué es Javascript?
 
@@ -913,6 +909,10 @@ Pues aplicando lo visto en Filter y Map, existen otras funciones sobre Arrays mu
 
 
 # JavaScript: Aplicado a la Web
+
+El principal uso de javascript está en la web y es donde vamos a poner el foco principal en este tema, pero para llegar a ese punto también hay que comprender sus fundamentos, su sintaxis y cómo los podemos integrar en nuestras págias web.
+El DOM es una API incluida en los navegadores y a través de la cual y desde javascript podemos acceder e interactuar con los elementos de una página web.
+Hace unos años esto se realizaba a través de librerías de terceros como JQuery y otras (aún disponibles) pero que actualmente esta API las ha sustitudio parcial o totalmente.
 
 ## DOM: Document Object Model
 
