@@ -48,8 +48,7 @@ Notas a destacar:
 
 * El ; es opcional
 * No se indica el tipo, solo "var", "let" o "const"
-  * Con "var" un variable se puede modificar
-  * Con "let"
+  * Con "var" y "let" un variable se puede modificar
   * Con "const" es inmutable, y no puede cambiar su valor, como si fuera constante.
 
 La diferencia principal entre 'var' y 'let' radica en el 'scope (ámbito).
@@ -204,6 +203,7 @@ Cuando se pasa un parámetro se puede pasar por referencia o por valor:
 Los objetos se pasan como referencia, y las variables por valor.
 
 ```javascript
+let edad=20
 
 function procesarCumpleaños(edad) {
    edad+=1; 
@@ -344,6 +344,8 @@ var esMayorDeEdad = ({edad}) => edad>=MAYOR_DE_EDAD
 
 ```
 
+[Para mejor compresión ver este video](https://www.youtube.com/watch?v=HVEkbCZAuqA&ab_channel=CodingTube)
+
 ## Objetos
 
 Un objeto en la vida real tiene propiedades y métodos, como por ejemplo "un coche". Un coche tiene una serie de propiedades "nombre, modelo, perso, color", y unos métodos "arrancar, parar, conducir, frenar".
@@ -359,7 +361,7 @@ var coche = {
     "nombre": "FIAT",
     "modelo": "500",
     "peso": 850,
-    "color": white
+    "color": 'white'
 }
 ```
 
@@ -373,7 +375,7 @@ var coche = {
     "nombre": "FIAT",
     "modelo": "500",
     "peso": 850,
-    "color": white
+    "color": 'white'
 }
 
 console.log(coche.nombre)
@@ -408,8 +410,6 @@ Si el objeto que se le pase, no tiene esa clave dará un error.
 
 ```
 
-
-
 **Desestructurar Objetos**
 
 Podemos desestructurar un objeto para asignar las propiedades deseadas simplemente, incluyendo el nombre de la variable como el nombre de la propiedad.
@@ -441,14 +441,12 @@ PrintFullName(person)
 
 ```
 
-
-
 ### Comparando objetos y variables
 
 En JS existen 2 operadores de comparación:
 
-* ==: JS convierte uno de los 2 operandos al otro, si puede
-* ===: JS no convierte nada, y realiza una comparación sin ninguna conversión. Es realmente la comparación normal que existe en otros lenguajes de programación.
+* ==  JS convierte uno de los 2 operandos al otro, si puede
+* === JS no convierte nada, y realiza una comparación sin ninguna conversión. Es realmente la comparación normal que existe en otros lenguajes de programación.
 
 ```javascript
 var x=4, y="4"
@@ -502,6 +500,154 @@ persona1 == persona2
 
 Nos tiene que quedar claro, que cuando comparamos valores simples (no objetos) no se utilizan las referencias, SOLO LOS VALORES.
 Cuando se comparan objetos, SE COMPARAN LAS REFERENCIAS si se usa el ==, para comprar valores hay que utilizar ===.
+
+## Clases
+
+El concepto de clases se introdujo en ES2015 y es una mejora bastante importante, ya que antes para crear una clase era bastante complejo y nada operativo.
+
+Las clases concepto de la POO es una forma de encapsular datos y funcionalidad.
+Los objetos vistos anteriormente son una instancia de una clase, es decir, que la clase sería la plantilla o el molde, y el objeto sería el resultante de aplicar la plantilla o el molde.
+
+**Declaración de las clases**
+
+```javascript
+class Rectangulo {
+  constructor(alto, ancho) {
+    this.alto = alto;
+    this.ancho = ancho;
+  }
+}
+```
+
+El método `constructor` es un método especial para crear e inicializar un objeto creado con una clase. Solo puede haber un método especial con el nombre 'constructor' en una clase. Si esta contuviera más de 
+una ocurrencia de este método daría un error de sintáxis.
+
+**Utilizar las clases**
+
+Para poder utilizar una clase, es necesario `instanciarla`.
+
+```javascript
+let rect = new Rectangulo(10,10).
+
+console.log(cuadrado.alto;
+```
+
+**Funciones dentro de clases**
+
+Las clases pueden contener funciones, pero se definen **sin** la palabra `function`
+
+```javascript
+class Persona {
+  constructor (nombre , apellidos,edad ){
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.edad=edad;
+  }
+
+  incrementarEdad() {
+      this.edad+=1;
+  }
+}
+
+let p = new Persona('manuel', 'zambrano elias', 28);
+p.incrementarEdad();  //Llamo a la función utilizando los paréntesis ().
+
+```
+
+
+**Métodos estáticos**
+
+Las clases pueden tener método estáticos, métodos que se llamen sin necesidad de instanciar la clase.
+
+```javascript
+class Punto {
+  constructor ( x , y ){
+    this.x = x;
+    this.y = y;
+  }
+
+  static distancia ( a , b) {
+    const dx = a.x - b.x;
+    const dy = a.y - b.y;
+
+    return Math.sqrt ( dx * dx + dy * dy );
+  }
+}
+
+const p1 = new Punto(5, 5);
+const p2 = new Punto(10, 10);
+
+console.log (Punto.distancia(p1, p2)); // 7.0710678118654755
+```
+
+```javascript
+class Rectangulo {
+  constructor(alto, ancho) {
+    this.alto = alto;
+    this.ancho = ancho;
+  }
+}
+```
+
+
+**Miembros privados y públicos**
+
+Una variable dentro de una clase en sí mismo ya es un miembro de instancia (o estatico si se anteponer con 'static').
+
+Estos miembros son por defecto públicos... 
+
+```javascript
+class Rectangulo {
+  #campoPrivado;  //este miembro es privado y se consigue anteponiendo el signo #.
+
+  constructor(alto, ancho) {
+    this.alto = alto;   //alto y ancho son miembros, y no hace falta previamente definirlas.
+    this.ancho = ancho;  //alto y ancho se pueden acceder directamente... y son públicos
+  }
+
+   static #metodoEstaticoPrivado() {
+        return 42;
+   }
+
+   static #metodoEstaticoPublico() {
+        return 50;
+   } 
+}
+
+let rect = new Rectangulo(10,10);
+console.log(rect.alto);   //accedo al método a través de la instancia de la clase.
+
+rect.#campoPrivado;   //Esto daría un error de sintáxis.
+
+Rectangulo.#metodoEstaticoPrivado;   //Esto daría un error de sintáxis.
+
+Rectangulo.metodoEstaticoPublico;   //Esto funcionaría ok y devuelve 50.
+
+```
+
+**Propiedades**
+
+Las clases aparte de las funciones y miembros pueden tener propiedades que controlen el acceso a la información.
+
+```javascript
+class ClassWithGetSet {
+  #msg = 'hola mundo';  
+
+  get msg() {   //método para acceder
+    return this.#msg;
+  }
+  set msg(x) {  //método para cambiar el valor
+    this.#msg = `hola ${x}`;
+  }
+}
+
+```
+
+
+<br>
+<br>
+
+
 
 
 ## Condicionales
@@ -1016,6 +1162,99 @@ En este serie de videos se explica mucho más en profundidad el uso del DOM:
 * [Crear e insertar elementos](https://youtu.be/XydYN4ZQL9s?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
 * [Atravesar el DOM o DOM Traversing](https://youtu.be/ZgomZF_Eaao?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
 * [Objetos nativos y timers](https://youtu.be/DxcnQD-fmOg?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
+
+
+
+### Eventos
+
+Un evento es algo muy utilizado actualmente en los lenguajes de programación moderno. Un evento como indica la misma palabra es algo que ocurre de forma no secuencial, y a través de ellos puedo reaccionar a ese evento producido, por ejemplo el 'click' de un botón.
+
+En el DOM tenemos muchísimos tipos de evento, y no siempre los provoca el usuario. Hay eventos que se ejecutan por el propio navegador, el contenido se ha ledio, se ha cargado, ... que el usuario pulse una tecla, que la ventana se cierre es un evento... y un largo etc.
+
+[MDN. Referencia de eventos estándar](https://developer.mozilla.org/es/docs/Web/Events)
+
+<br>
+
+**¿Cómo capturar los eventos?**
+
+Hace unos años los eventos se capturaban de esta forma, poniendo los nombres de eventos como atributos y anteponiendo la palabra 'on', y entre comillas el nombre de la función..
+
+```html
+<p onclick="saludo()">Soy un parrafo</p>
+```
+
+Esto a día de hoy ya no se hace porque es una mala práctica, ya que estamos mezclando lenguajes, poruna parte HTML y por otra Javascript. Y esto es una muy mala práctica.
+Depurar el código también es muy complejo con esta fórmula.
+
+La forma correcta es esta:
+
+```javascript
+//Element es un nodo del Dom.
+//'event' se cambia por el nombre del evento específico.. 'click' o el que sea, ya no poniendo on...
+Element.addEventListener('event', callback)
+```
+
+**¿Qué es un callback?**
+
+Una función callback es una función que se pasa como parámetro a una función, para luego ser invocada normalmente a la finalización de algo o cuando ocurre un evento.
+
+Las funciones callback se suelen escribir en forma de `arrow function` ya que facilitan mucho la lectura.
+
+
+**Disparar un evento**
+
+Un evento se dice que se dispara cuando se produce, y si sobre ese evento tenemos control, es decir, queremos que nos avise cuando se dispare necesitamos incluir una callback o función específica.
+
+Veamos un ejemplo.
+
+```html
+ <!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button id="button">Click-me</button>
+</body>
+
+</html>
+```
+
+Tenemos un botón con el id=button, y queremos que cuando se haga click sobre el botón muestra el mensaje "Hola mundo".
+
+```javascript
+
+const button = document.getElementById('button');
+
+button.addEventListener('click', () => {
+    console.log('Hola mundo');
+})
+
+```
+
+Sobre un evento es muy importante tener información adicional sobre el elemento que provoca el evento, y otra información... para obtener el evento propiamente dicho, es necesario (aunque no en todos los navegadores) incluir en la función `callback` un parámetro que será el evento...
+
+```javascript
+
+const button = document.getElementById('button');
+
+button.addEventListener('click', (event) => {   
+    console.log(event);
+})
+```
+
+Si vemos la consola vemos como tenemos una lista enorme de propiedades, métodos, ... una de las más usadas es `event.target` que devuelve el elemento que disparó el evento.
+
+No todos los eventos tienen las mismas propiedades, y estas dependerán del tipo de evento.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
