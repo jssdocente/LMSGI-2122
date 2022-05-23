@@ -1163,7 +1163,15 @@ En este serie de videos se explica mucho más en profundidad el uso del DOM:
 * [Atravesar el DOM o DOM Traversing](https://youtu.be/ZgomZF_Eaao?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
 * [Objetos nativos y timers](https://youtu.be/DxcnQD-fmOg?list=PLROIqh_5RZeBAnmi0rqLkyZIAVmT5lZxG)
 
+<br><br>
 
+### Manejando el DOM.. de forma `PRO`.
+<br>
+
+* [Trabajo con Clases](teoria/../conceptos/dom_trabajo-con-classes/23-working-with-classes.md)
+
+
+<br><br>
 
 ### Eventos
 
