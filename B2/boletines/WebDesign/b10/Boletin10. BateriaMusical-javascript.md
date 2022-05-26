@@ -1,4 +1,4 @@
-# BOLETÍN 9. CALCULADORA FUNCIONAL CON JAVASCRIPT
+# BOLETÍN 10. BATERIA MUSICAL CON JAVASCRIPT
 
 En este boletín vamos a seguir prácticando el trabajo con el DOM, eventos y agregar/quitar selectores a voluntad a los elementos HTML, y todo ello
 utilizando JavaScript.
