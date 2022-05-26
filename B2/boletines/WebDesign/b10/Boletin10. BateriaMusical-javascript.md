@@ -51,7 +51,7 @@ Está parcialmente realizado, y se indican los pasos que tenéis que completar c
 
 ### Recursos para su realización
 
-Principalmente este video donde os explico con un ejemplo similar como seleccionar elementos HTML desde el DOM utilizando los `atributos` de los elementos.
+Principalmente este [video](https://youtu.be/7W8BjqYD6Es) donde os explico con un ejemplo similar como seleccionar elementos HTML desde el DOM utilizando los `atributos` de los elementos.
 
 Principalmente [este recurso](https://github.com/jssdocente/LMSGI-2122/tree/main/B2/apuntes/javascript/ejemplos/4.dom_trabajo_con_clases) donde se explica a quitar y poner una clase a un elemento HTML.
 
