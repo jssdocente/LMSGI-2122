@@ -131,7 +131,7 @@ Supongo que si estás utilizando los tres tipos de CSS te preguntarás cuál pre
    
 Por lo tanto, un estilo en línea (dentro de un elemento HTML específico) tiene la prioridad más alta, lo que significa que va a anular los estilos definidos dentro de la etiqueta <head>, aquellos recogidos en una hoja de estilos externa (archivo.css) o incluso los que trae por defecto el navegador.
 
-## Moelo de Caja
+## Modelo de Caja
 
 Una de los conceptos más importantes que debemos recordar a la hora de elaborar CSS es que todos y cada uno de los elementos de mi página web son cajas.
 
