@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mundial>
+    <resultados_paises>
+        <pais nombre="canada">
+            <id>17</id>
+            <nombre_alternativo />
+            <codigo_fifa>CAN</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+            <ganados>2</ganados>
+            <empates>0</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>6</puntos>
+            <goles_afavor>4</goles_afavor>
+            <goles_encontra>3</goles_encontra>
+            <goles_diferencial>1</goles_diferencial>
+        </pais>
+        <pais nombre="Scotland">
+            <id>14</id>
+            <nombre_alternativo />
+            <codigo_fifa>SCO</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+            <ganados>0</ganados>
+            <empates>1</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>1</puntos>
+            <goles_afavor>5</goles_afavor>
+            <goles_encontra>7</goles_encontra>
+            <goles_diferencial>-2</goles_diferencial>
+        </pais>
+
+        <pais nombre="Australia">
+            <id>9</id>
+            <nombre_alternativo />
+            <codigo_fifa>AUS</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+            <ganados>2</ganados>
+            <empates>1</empates>
+            <perdidos>1</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>7</puntos>
+            <goles_afavor>9</goles_afavor>
+            <goles_encontra>6</goles_encontra>
+            <goles_diferencial>3</goles_diferencial>
+        </pais>
+        <pais nombre="Argentina">
+            <id>15</id>
+            <nombre_alternativo />
+            <codigo_fifa>ARG</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+            <ganados>0</ganados>
+            <empates>2</empates>
+            <perdidos>1</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>2</puntos>
+            <goles_afavor>3</goles_afavor>
+            <goles_encontra>4</goles_encontra>
+            <goles_diferencial>-1</goles_diferencial>
+        </pais>
+        <pais nombre="Italy">
+            <id>10</id>
+            <nombre_alternativo />
+            <codigo_fifa>ITA</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+            <ganados>3</ganados>
+            <empates>0</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>5</partidos_jugados>
+            <puntos>9</puntos>
+            <goles_afavor>9</goles_afavor>
+            <goles_encontra>4</goles_encontra>
+            <goles_diferencial>5</goles_diferencial>
+        </pais>
+        <pais nombre="New Zealand">
+            <id>19</id>
+            <pais>New Zealand</pais>
+            <nombre_alternativo />
+            <codigo_fifa>NZL</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+            <ganados>0</ganados>
+            <empates>0</empates>
+            <perdidos>3</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>0</puntos>
+            <goles_afavor>1</goles_afavor>
+            <goles_encontra>5</goles_encontra>
+            <goles_diferencial>-4</goles_diferencial>
+        </pais>
+        <pais nombre="Korea Republic">
+            <id>2</id>
+            <nombre_alternativo />
+            <codigo_fifa>KOR</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+            <ganados>0</ganados>
+            <empates>0</empates>
+            <perdidos>3</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>0</puntos>
+            <goles_afavor>1</goles_afavor>
+            <goles_encontra>8</goles_encontra>
+            <goles_diferencial>-7</goles_diferencial>
+        </pais>
+        <pais nombre="Thailand">
+            <id>22</id>
+            <nombre_alternativo />
+            <codigo_fifa>THA</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+            <ganados>0</ganados>
+            <empates>0</empates>
+            <perdidos>3</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>0</puntos>
+            <goles_afavor>1</goles_afavor>
+            <goles_encontra>20</goles_encontra>
+            <goles_diferencial>-19</goles_diferencial>
+        </pais>
+        <pais nombre="Chile">
+            <id>23</id>
+            <nombre_alternativo />
+            <codigo_fifa>CHI</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+            <ganados>1</ganados>
+            <empates>0</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>3</partidos_jugados>
+            <puntos>3</puntos>
+            <goles_afavor>2</goles_afavor>
+            <goles_encontra>5</goles_encontra>
+            <goles_diferencial>-3</goles_diferencial>
+        </pais>
+        <pais nombre="China PR">
+            <id>6</id>
+            <nombre_alternativo />
+            <codigo_fifa>CHN</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+            <ganados>1</ganados>
+            <empates>1</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>4</puntos>
+            <goles_afavor>1</goles_afavor>
+            <goles_encontra>3</goles_encontra>
+            <goles_diferencial>-2</goles_diferencial>
+        </pais>
+        <pais nombre="Japan">
+            <id>16</id>
+            <nombre_alternativo />
+            <codigo_fifa>JPN</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+            <ganados>1</ganados>
+            <empates>1</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>4</puntos>
+            <goles_afavor>3</goles_afavor>
+            <goles_encontra>5</goles_encontra>
+            <goles_diferencial>-2</goles_diferencial>
+        </pais>
+        <pais nombre="England">
+            <id>13</id>
+            <nombre_alternativo />
+            <codigo_fifa>ENG</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+            <ganados>5</ganados>
+            <empates>0</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>7</partidos_jugados>
+            <puntos>15</puntos>
+            <goles_afavor>13</goles_afavor>
+            <goles_encontra>5</goles_encontra>
+            <goles_diferencial>8</goles_diferencial>
+        </pais>
+        <pais nombre="Norway">
+            <id>3</id>
+            <nombre_alternativo />
+            <codigo_fifa>NOR</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+            <ganados>2</ganados>
+            <empates>1</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>5</partidos_jugados>
+            <puntos>7</puntos>
+            <goles_afavor>7</goles_afavor>
+            <goles_encontra>7</goles_encontra>
+            <goles_diferencial>0</goles_diferencial>
+        </pais>
+        <pais nombre="Brazil">
+            <id>11</id>
+            <nombre_alternativo />
+            <codigo_fifa>BRA</codigo_fifa>pais
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+            <ganados>2</ganados>
+            <empates>0</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>6</puntos>
+            <goles_afavor>7</goles_afavor>
+            <goles_encontra>5</goles_encontra>
+            <goles_diferencial>2</goles_diferencial>
+        </pais>
+        <pais nombre="Spain">
+            <id>7</id>
+            <nombre_alternativo />
+            <codigo_fifa>ESP</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+            <ganados>1</ganados>
+            <empates>1</empates>
+            <perdidos>2</perdidos>
+            <partidos_jugados>4</partidos_jugados>
+            <puntos>4</puntos>
+            <goles_afavor>4</goles_afavor>
+            <goles_encontra>4</goles_encontra>
+            <goles_diferencial>0</goles_diferencial>
+        </pais>
+
+    </resultados_paises>
+    <equipos>
+        <equipo nombre="canada">
+            <id>17</id>
+            <pais>Canada</pais>
+            <nombre_alternativo />
+            <codigo_fifa>CAN</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+        </equipo>
+        <equipo nombre="Scotland">
+            <id>14</id>
+            <pais>Scotland</pais>
+            <nombre_alternativo />
+            <codigo_fifa>SCO</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+        </equipo>
+        <equipo nombre="Australia">
+            <id>9</id>
+            <pais>Australia</pais>
+            <nombre_alternativo />
+            <codigo_fifa>AUS</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+        </equipo>
+        <equipo nombre="Argentina">
+            <id>15</id>
+            <pais>Argentina</pais>
+            <nombre_alternativo />
+            <codigo_fifa>ARG</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+        </equipo>
+        <equipo nombre="Italy">
+            <id>10</id>
+            <pais>Italy</pais>
+            <nombre_alternativo />
+            <codigo_fifa>ITA</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+        </equipo>
+        <equipo nombre="New Zealand">
+            <id>19</id>
+            <pais>New Zealand</pais>
+            <nombre_alternativo />
+            <codigo_fifa>NZL</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+        </equipo>
+        <equipo nombre="Korea Republic">
+            <id>2</id>
+            <pais>Korea Republic</pais>
+            <nombre_alternativo />
+            <codigo_fifa>KOR</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+        </equipo>
+        <equipo nombre="Thailand">
+            <id>22</id>
+            <pais>Thailand</pais>
+            <nombre_alternativo />
+            <codigo_fifa>THA</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+        </equipo>
+        <equipo nombre="Chile">
+            <id>23</id>
+            <pais>Chile</pais>
+            <nombre_alternativo />
+            <codigo_fifa>CHI</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+        </equipo>
+        <equipo nombre="China PR">
+            <id>6</id>
+            <pais>China PR</pais>
+            <nombre_alternativo />
+            <codigo_fifa>CHN</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+        </equipo>
+        <equipo nombre="Japan">
+            <id>16</id>
+            <pais>Japan</pais>
+            <nombre_alternativo />
+            <codigo_fifa>JPN</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+        </equipo>
+        <equipo nombre="England">
+            <id>13</id>
+            <pais>England</pais>
+            <nombre_alternativo />
+            <codigo_fifa>ENG</codigo_fifa>
+            <grupo_id>4</grupo_id>
+            <grupo_letra>D</grupo_letra>
+        </equipo>
+        <equipo nombre="Norway">
+            <id>3</id>
+            <pais>Norway</pais>
+            <nombre_alternativo />
+            <codigo_fifa>NOR</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+        </equipo>
+        <equipo nombre="Brazil">
+            <id>11</id>
+            <pais>Brazil</pais>
+            <nombre_alternativo />
+            <codigo_fifa>BRA</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+        </equipo>
+        <equipo nombre="SWE">
+            <id>24</id>
+            <pais>Sweden</pais>
+            <nombre_alternativo />
+            <codigo_fifa>SWE</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+        </equipo>
+        <equipo nombre="South Africa">
+            <id>8</id>
+            <pais>South Africa</pais>
+            <nombre_alternativo />
+            <codigo_fifa>RSA</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+        </equipo>
+        <equipo nombre="Cameroon">
+            <id>18</id>
+            <pais>Cameroon</pais>
+            <nombre_alternativo />
+            <codigo_fifa>CMR</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+        </equipo>
+        <equipo nombre="Jamaica">
+            <id>12</id>
+            <pais>Jamaica</pais>
+            <nombre_alternativo />
+            <codigo_fifa>JAM</codigo_fifa>
+            <grupo_id>3</grupo_id>
+            <grupo_letra>C</grupo_letra>
+        </equipo>
+        <equipo nombre="USA">
+            <id>21</id>
+            <pais>USA</pais>
+            <nombre_alternativo />
+            <codigo_fifa>USA</codigo_fifa>
+            <grupo_id>6</grupo_id>
+            <grupo_letra>F</grupo_letra>
+        </equipo>
+        <equipo nombre="France">
+            <id>1</id>
+            <pais>France</pais>
+            <nombre_alternativo />
+            <codigo_fifa>FRA</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+        </equipo>
+        <equipo nombre="Netherlands">
+            <id>20</id>
+            <pais>Netherlands</pais>
+            <nombre_alternativo />
+            <codigo_fifa>NED</codigo_fifa>
+            <grupo_id>5</grupo_id>
+            <grupo_letra>E</grupo_letra>
+        </equipo>
+        <equipo nombre="Germany">
+            <id>5</id>
+            <pais>Germany</pais>
+            <nombre_alternativo />
+            <codigo_fifa>GER</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+        </equipo>
+        <equipo nombre="Nigeria">
+            <id>4</id>
+            <pais>Nigeria</pais>
+            <nombre_alternativo />
+            <codigo_fifa>NGA</codigo_fifa>
+            <grupo_id>1</grupo_id>
+            <grupo_letra>A</grupo_letra>
+        </equipo>
+        <equipo nombre="Spain">
+            <id>7</id>
+            <pais>Spain</pais>
+            <nombre_alternativo />
+            <codigo_fifa>ESP</codigo_fifa>
+            <grupo_id>2</grupo_id>
+            <grupo_letra>B</grupo_letra>
+        </equipo>
+    </equipos>
+</mundial>
